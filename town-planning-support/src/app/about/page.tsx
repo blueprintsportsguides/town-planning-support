@@ -212,7 +212,7 @@ export default function AboutPage() {
                 alt="Royal Town Planning Institute"
                 width={40}
                 height={40}
-                className="w-10 h-10 mb-4"
+                className="h-10 w-auto object-contain mb-4"
               />
               <div className="text-3xl font-bold text-slate-900 mb-1">MRTPI</div>
               <div className="text-sm text-slate-600">Qualified Consultants</div>

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const highlights = [
   "MRTPI Chartered Consultants",
@@ -66,7 +67,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row items-start sm:items-center gap-4"
           >
             <Button href="/contact" size="lg" className="group">
               Discuss Your Project
@@ -75,6 +76,16 @@ export function Hero() {
             <Button href="/services" variant="outline" size="lg">
               Explore Our Services
             </Button>
+            <div className="flex items-center gap-2 sm:ml-2">
+              <Image
+                src="/rtpi.webp"
+                alt="Royal Town Planning Institute"
+                width={36}
+                height={36}
+                className="w-9 h-auto object-contain"
+              />
+              <span className="text-xs text-slate-500">MRTPI<br />Qualified</span>
+            </div>
           </motion.div>
 
           <motion.div
@@ -86,8 +97,6 @@ export function Hero() {
             <p className="text-sm text-slate-500 mb-3">Trusted by</p>
             <div className="flex flex-wrap gap-6 text-slate-600">
               <span className="text-sm font-medium">Architects</span>
-              <span className="text-slate-300">|</span>
-              <span className="text-sm font-medium">Developers</span>
               <span className="text-slate-300">|</span>
               <span className="text-sm font-medium">Developers</span>
               <span className="text-slate-300">|</span>

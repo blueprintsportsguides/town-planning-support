@@ -1,10 +1,10 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { NAV_LINKS, COMPANY } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -83,14 +83,7 @@ export function Header() {
               ))}
             </div>
 
-            <div className="hidden lg:flex items-center gap-3">
-              <a
-                href={`tel:${COMPANY.phone.replace(/\s/g, "")}`}
-                className="flex items-center gap-2 text-sm text-slate-600 hover:text-navy-700 transition-colors"
-              >
-                <Phone className="w-4 h-4" />
-                <span className="font-medium">{COMPANY.phone}</span>
-              </a>
+            <div className="hidden lg:flex items-center">
               <Button href="/contact" size="sm">
                 Get in Touch
               </Button>
@@ -157,19 +150,10 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="mt-8 pt-6 border-t border-slate-200">
-            <a
-              href={`tel:${COMPANY.phone.replace(/\s/g, "")}`}
-              className="flex items-center gap-3 px-4 py-3 text-navy-700"
-            >
-              <Phone className="w-5 h-5" />
-              <span className="font-medium">{COMPANY.phone}</span>
-            </a>
-            <div className="mt-4 px-4">
-              <Button href="/contact" className="w-full" size="lg" onClick={() => setIsMenuOpen(false)}>
-                Get in Touch
-              </Button>
-            </div>
+          <div className="mt-8 pt-6 border-t border-slate-200 px-4">
+            <Button href="/contact" className="w-full" size="lg" onClick={() => setIsMenuOpen(false)}>
+              Get in Touch
+            </Button>
           </div>
         </Container>
       </div>

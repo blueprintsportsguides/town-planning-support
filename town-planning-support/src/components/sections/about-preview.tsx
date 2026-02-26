@@ -87,7 +87,7 @@ export function AboutPreview() {
                   alt="RTPI"
                   width={32}
                   height={32}
-                  className="w-8 h-8 mb-3"
+                  className="h-8 w-auto object-contain mb-3"
                 />
               ) : null}
               <div className="text-3xl md:text-4xl font-bold text-white mb-1">
