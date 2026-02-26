@@ -76,16 +76,13 @@ export function Hero() {
             <Button href="/services" variant="outline" size="lg">
               Explore Our Services
             </Button>
-            <div className="flex items-center gap-2 sm:ml-2">
-              <Image
-                src="/rtpi.webp"
-                alt="Royal Town Planning Institute"
-                width={36}
-                height={36}
-                className="w-9 h-auto object-contain"
-              />
-              <span className="text-xs text-slate-500">MRTPI<br />Qualified</span>
-            </div>
+            <Image
+              src="/rtpi.webp"
+              alt="Royal Town Planning Institute - MRTPI Qualified"
+              width={48}
+              height={48}
+              className="h-12 w-auto object-contain sm:ml-2"
+            />
           </motion.div>
 
           <motion.div

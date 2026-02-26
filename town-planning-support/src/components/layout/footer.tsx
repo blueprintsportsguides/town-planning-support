@@ -30,17 +30,14 @@ export function Footer() {
               <Building2 className="w-4 h-4 flex-shrink-0" />
               <span>Company No: {COMPANY.registeredCompany}</span>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="bg-white rounded-lg p-1.5">
-                <Image
-                  src="/rtpi.webp"
-                  alt="Royal Town Planning Institute"
-                  width={40}
-                  height={40}
-                  className="w-10 h-auto object-contain"
-                />
-              </div>
-              <span className="text-xs text-white/60">MRTPI Qualified</span>
+            <div className="bg-white rounded-lg p-2">
+              <Image
+                src="/rtpi.webp"
+                alt="Royal Town Planning Institute - MRTPI Qualified"
+                width={56}
+                height={56}
+                className="h-14 w-auto object-contain"
+              />
             </div>
           </div>
 
