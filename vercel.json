@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd town-planning-support && npm run build",
+  "outputDirectory": "town-planning-support/.next",
+  "installCommand": "cd town-planning-support && npm install",
+  "framework": "nextjs"
+}
